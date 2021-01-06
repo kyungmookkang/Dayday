@@ -424,6 +424,13 @@ while i < 5:
     i += 1
     print("*"*i)
 
+# a = "*"
+# i = 0
+# for i in range(5):
+#     for j in range(?):
+#         print(" ")
+#     for k in range(?):
+#         print("*")
 # 2)
 #      *
 #     **
