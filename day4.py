@@ -464,6 +464,7 @@ for nums in range(1,101):
 # 4-1. for 문을 사용해 2부터 100까지 숫자 중 소수를 (prime number)를 출력해보자.
 # * 소수란? 1과 자기 자신으로만 나누어 떨어지는 수(2. 3 . 5. 7. 11. ..)
 
+for k2 in range
 
 # 5. A 학급에 총 10명의 학생이 있다. 이 학생들의 중간고사 점수는 다음과 같다.
 score = [70, 60, 55, 75, 95, 90, 80, 80, 85, 100]
@@ -487,12 +488,13 @@ print("Average : ", avg)
 # # 차이점
 # print(random.randrange(1,46,2)) # 1~45까지 2씩 증가시킨 수 중에서 난수 발생
 import random
-lotto = []
-while len(lotto) < 6:
-    nums = random.randrange(1,46)
-    if nums in lotto : pass
-    else: lotto = lotto + [nums]
-    print(lotto)
+# lotto = []
+# while len(lotto) < 6:
+#     nums = random.randrange(1,46)
+#     if nums in lotto : pass
+#     else: lotto = lotto + [nums]
+#     print(lotto)
+)
 
 # 7. 자판기(pro, 커피 한 잔에 300원이라 가정, 초기 커피는 10개)
 # 돈을 넣어 주세요: 500
