@@ -349,3 +349,21 @@ rotator, sos, abba (nurses run)
 #     if (a == '0'): break
 #     if (palindrome(a, 0, len(a) - 1)): print("yes")
 #     else: print("no")
+# w = input("단어 입력 :")
+# isPalindrome = True # 회문 여부, 초기값은 True
+# # 글자가 홀수면 중간 기준 빼고 비교, 짝수면 /2 만큼 즉: 몫 만큼 비교하면 된다.
+# for i in range(len(w)// 2):
+#     if w[i] != w[-1 -i]: # 왼쪽 문자와 오른쪽 문자가 다른경우
+#         isPalindrome = False
+#         break
+# print(isPalindrome)
+
+# nurses run -> nursesrun : 공백문자 -> 전처리(제거)
+
+w = input("put your word :")
+w = w.replace(" ", "")
+# print(w == w[::-1])
+# print(w)
+# print(w[::-1])
+print(list(reversed(w)))
+print(list(w) == list(reversed(w)))
