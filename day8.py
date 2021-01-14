@@ -64,7 +64,7 @@ print(os.getcwd())  # current working directory
 # os.mkdir('sample.py')
 # os.rmdir('sample.py')
 # os.rename("sample", "Test")
-
+# os.rename("day9.py", "web2.py")
 
 
 
