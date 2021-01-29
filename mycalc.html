@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Calculator</title>
+    <script>
+    window.onload=function(){
+    //alert("CALCULATION") 온로드는 페이지 읽었을 때 두둥 뜨는 창
+    //btnSend(=) 버튼을 클릭하면 chkData함수를 호출해라
+    document.getElementById("btnSend").onclick = chkData;
+    }
+    function chkData(){
+    //alert("데이터 검증 함수가 호출됨");
+    //검증하는 코드 작성
+        if(frm.num1.value===""){
+        alert("Please put number in Num1");
+        frm.num1.focus();
+        return;
+    }
+    // 숫자, 음수 기호, 소수점만 입력 가능하도록 정규식 정의
+    var regEx1=/^[-]?\d*\.?\d*$/;
+if(!frm.num1.value.match(regEx1)){  //매치되지 않는다면
+        alert("ONLY number");
+        frm.num1.focus();
+        return;
+
+        }
+
+
+
+
+     if(frm.num2.value===""){
+        alert("Please put number in Num2");
+        frm.num1.focus();
+        return;
+     }
+    var regEx2=/^[-]?\d*\.?\d$/;
+if(!frm.num2.value.match(regEx2)){  //매치되지 않는다면
+        alert("ONLY number");
+        frm.num2.focus();
+        return;
+    }
+    var su1=frm.num1.value;
+    var su2=frm.num2.value;
+
+    isOpChecked=false;
+
+    for(var i=0;i<frm.op.length;i++){
+        if(frm.op[i].checked){
+        //alert(i+"th button is selected");
+            oper=frm.op[i].id;
+            alert(oper+"  th button is selected");
+            isOpChecked=true;
+        }
+    }
+    if(!isOpChecked){
+        alert("Choose the way to calculate");
+        return;
+        }
+    if(oper==="add"){
+    document.getElementById("res").value=eval(su1 + "+" + su2)
+
+    }
+    if(oper==="sub"){
+    document.getElementById("res").value=eval(su1 + "-" + su2)
+
+    }
+    if(oper==="mul"){
+    document.getElementById("res").value=eval(su1 + "*" + su2)
+    }
+    if(oper==="div"){
+    document.getElementById("res").value=eval(su1 + "/" + su2)
+    }
+
+
+
+    }
+
+    </script>
+</head>
+<!--<body onload="myfunc();">-->
+<body>
+<form name="frm">
+    <label>Num1 : <input type="text" name="num1"></label><br>
+    <label>Num2 : <input type="text" name="num2"></label><br><br>
+    Cal:
+    <label for="add">+<input type="radio" name="op" id="add"></label>
+    <label for="add">-<input type="radio" name="op" id="sub"></label>
+    <label for="add">*<input type="radio" name="op" id="mul"></label>
+    <label for="add">/<input type="radio" name="op" id="div"></label><br>
+
+    <label>Result : <input type="text" id="res" readonly="readonly"></label><br>
+    <input type="button" value="=" id="btnSend">
+    <input type="reset" value="AC" id="btnClear">
+
+
+
+</form>
+</body>
+</html>

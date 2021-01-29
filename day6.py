@@ -42,7 +42,7 @@ with open("hello.txt", "r") as f:
 목표 값:
 hello world 1
 ...
-hello world 10
+hello world 10  ㄷ소
 """
 # w 모드로 열게되면 기존에 작성되어 있던 내용은 사라짐 (덮어쓰기)
 with open("hello.txt", "w") as f:
@@ -53,7 +53,6 @@ with open("hello.txt", "w") as f:
 
 """
 리스트의 내용을 파일에 출력 
-
 lines = ['안녕\n', '반가워\n', '잘지내\n']
 with open("hello.txt", "w") as f:
    #  f.write(lines)  # Error 문자열만 받는다...

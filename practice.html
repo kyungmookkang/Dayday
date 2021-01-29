@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="실행app의위치(주소)" method="get" name="">
+    <fieldset>
+        <legend>개인정보</legend>
+<!-- 입력상자와 레이블의 연결을 묵시적(implicit)으로 함      -->
+        <label>이름 : <input type="text"></label><br>
+
+        <label>주소 : <input type="text"></label><br>
+
+        <label>나이 : <input type="text"></label><br>
+
+        <input type="radio" name="color-select" id="abc" value="blue">
+        <label for="abc">파랑</label>
+        <input type="radio" name="color-select" id="def" value="yellow">
+        <label for="def">노랑</label>
+        기타 : <input type="text">
+
+        <input type="submit" value="서버로 전송">
+        <input type="reset" value="리셋"><br>
+        <input type="button" value="Click me" onclick="처리함수"><br>
+        비밀번호 : <input type="password" accept=""><br>
+        <input type="file" accept="image/jpeg"><br>
+
+        <input type="checkbox" name="nation" value="Kor" checked="checked">한국
+        <input type="checkbox" name="nation" value="USA">미국
+        <input type="checkbox" name="nation" value="Chn">중국
+        <br>
+
+        <input type="checkbox" name="hobby" value="mov" checked="checked">영화화
+        <input type="checkbox" name="hobby" value="mus">음악감상
+        <input type="checkbox" name="hobby" value="rid">자전거타기
+        <input type="text"><br>
+        <input type="date"><br>
+        <input type="email"><br>
+        <input type="url"><br>
+        <input type="tel"><br>
+
+        <input type="text" value="1234" disabled="disabled">
+        <input type="text" value="1234" disabled="readonly"><br>
+        <input type="text" size="10">
+        <input type="text" pattern="[A-Z]" placeholder="영문 대문자만 입력"><br>
+        <textarea row="10" cols="40" maxlength="40"></textarea><br>
+
+
+        <select>
+            <option value="c">c 언어</option>
+            <option value="py">파이썬</option>
+            <option value="js">자바스크립트</option>
+
+        </select>
+<br>
+        <input type="button" value="전송하기">
+        <button type="button">클릭하기</button>
+        <button type="submit">전송하기</button>
+        <button type="reset">리셋하기</button>
+<!--
+  \]서버로 폼 내용 전송시, 버튼과 서브밋 방식의 차이
+     서브밋 : 곧바로 서버에 폼 내용을 전송
+     버튼: 자바스크립트 함수 호출 -> 함수 내에서 유효성 검증 -> 검증 수행 후 전송
+
+     -->
+
+
+                <input type="image" src="btn.jpg">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+    </fieldset>
+
+
+
+</form>
+
+</body>
+</html>

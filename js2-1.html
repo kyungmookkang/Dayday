@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+    /*
+  #1
+    var kkm={};
+    kkm['name'] ='mookmook';
+    kkm['age'] =29;
+    kkm['gender'] ='man';
+    document.write(kkm['name']);
+*/
+ /*
+// #2, kkm객체 생성, 속성 : name, age, gender
+  var kkm={
+  'name':'mookmook',
+  'age':29,
+  'gender':'man'
+  };
+  document.write(kkm['name']);
+
+*/
+// #3. new이용   # new 클래스
+
+var kkm={
+//속성정의
+'list':{
+'name':'mookmook',
+'age':29,
+'gender':'man'},
+//메서드 정의
+'show':function(){
+    for(var n in this.list){
+        document.write(n+":"+this.list[n]+"<br/>");
+        }
+        }
+        }
+        kkm.show();
+
+
+ /*
+var kkm = new Object();
+
+var kkm={};
+    kkm['name'] ='mookmook';
+    kkm['age'] =29;
+    kkm['gender'] ='man';
+    // document.write(kkm['name']);
+
+for(k in kkm){
+    document.write(k+"<br/>");
+}
+
+상속 : 상위 클래스가 가지고 있는 동작, 속성 등을 하위 클래스로 유지되는 것
+오버라이딩(over-riding, 재정의) : 상위 클래스가 전해 준 동작을 하위 클래스가 변경하는 것
+하위 클래스는 상위클래스로부터 물려받은 동작 외에 다른 동작을 추가할 수 있다
+===> 객체 지향 설계 => 객체 지향 프로그래밍
+
+
+var arr=[1,2,3,4];
+document.write(arr.index0f(3));
+    // 3이라는 자료의 인덱스(0번부터 시작)를 출력
+var fruits=['apple','banana','orange'];
+fruits.sort();
+document.write(fruits+"<br/>");
+*/
+
+    /*
+    var v= fruits.splice(1,2);
+    document.write(v+"<br/>");
+    document.write(fruits+"<br/>");
+
+*/
+
+
+/*
+    arr.unshift(999);   # 맨 앞에 데이터 추가
+    alert(arr);
+    document.write(arr.shift()+"<br/>");  //맨 앞의 데이터 제거
+    document.write(arr)
+*/
+/*
+    //alert(arr.length);
+    arr.push(5);
+    alert(arr);
+    p = arr.pop();
+    document.write(p);
+*/
+
+    </script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
